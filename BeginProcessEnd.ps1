@@ -10,25 +10,25 @@ function Blah {
 
 		# This is another parameter that is not part of the pipeline
 		[string]
-		$Info="test"
+		$AnotherParam="test"
 	)
 
 	# Run this once only at the beginning, $Item isn't defined
 	begin {
-		Write-Host "begin Info=$Info, Item=$Item"
+		Write-Host "begin AnotherParam=$AnotherParam, Item=$Item"
 	}
 
 	# UNEXPECTED: an implicit foreach loop
 	# Powershell automatically calls this for each $Item in pipeline
 	# input.  Note that $_ is implicitly also assigned that value
 	process {
-		Write-Host "process Info=$Info, Item=$Item, `$_=$_"
+		Write-Host "process AnotherParam=$AnotherParam, Item=$Item, `$_=$_"
 	}
 
 	# Run this once only at the end
 	# NOT SURE WHAT TO EXPECT: $Item retains last value
 	end {
-		Write-Host "end Info=$Info, Item=$Item"
+		Write-Host "end AnotherParam=$AnotherParam, Item=$Item"
 	}
 
 }
@@ -56,7 +56,7 @@ function Blah2 {
 
 #
 # MAYBE there's some efficiency for really large sets 
-# where it's a true pipeline, but that's probably really
+# where it's a true pipeline, but that's really
 # hard to do right
 #
 

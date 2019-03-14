@@ -14,6 +14,8 @@ function Invoke-MyFunc1 {
 		# This is a mandatory string parameter
 		[parameter(Mandatory=$true)]
 		[String]
+		# You can supply an optional alternate spelling/name for this param
+		[Alias("Fruit")]
 		$B = "banana",
 
 		# Optional int parameter with explicit default
@@ -27,3 +29,7 @@ function Invoke-MyFunc1 {
 Invoke-MyFunc1 "apple" "bear"
 
 Something about [Array] and [Hashtable]
+
+Something about aliases
+
+Something about validation
