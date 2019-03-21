@@ -9,3 +9,5 @@ $Arr | foreach { Write-Host "sample 3: $_" }
 $Arr | % { Write-Host "sample 4: $_" }
 
 foreach($Item in $Arr) { Write-Host "sample 5: $Item" }
+
+ForEach-Object and foreach have very subtle differences

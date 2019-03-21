@@ -23,7 +23,7 @@ function Invoke-MyFunc1 {
 		$C = 5
 	)
 
-	Write-Output "A=$A, B=$B, C=$C"	
+	Write-Output "A=$A, B=$B, C=$C"
 }
 
 Invoke-MyFunc1 "apple" "bear"

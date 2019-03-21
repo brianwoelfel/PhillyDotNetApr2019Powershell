@@ -13,6 +13,7 @@ $NugetPackagesToLoad = @("NPoi", "EPPlus")
 # https://stackoverflow.com/questions/39257572/loading-assemblies-from-nuget-packages
 # and 
 # https://social.technet.microsoft.com/Forums/en-US/8248d617-816b-4435-924d-5dab7de2774d/try-catch-what-is-the-exception-type?forum=winserverpowershell
+#
 $NugetPackagesToLoad | % {
 	[string]$PackageName = $_
 	# Make sure package is installed
@@ -22,7 +23,7 @@ $NugetPackagesToLoad | % {
 		throw "Nuget Package $PackageName not installed"
 	}
 
-	# Load NPoi into the current session
+	# Load package into the current session
 	try {
 		(Get-ChildItem -Filter *.dll -Recurse (Split-Path (get-package $PackageName).Source)).FullName | % { 
 			[Reflection.Assembly]::LoadFrom($_) | Out-Null 
@@ -31,4 +32,3 @@ $NugetPackagesToLoad | % {
 		throw "Failed attempting to load $PackageName toolkit $_"
 	}
 }
-

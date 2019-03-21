@@ -2,7 +2,7 @@ function Invoke-MyFunc1 {
 <#
 .SYNOPSIS
 	A quick one sentence summary of Invoke-MyFunc1
-	
+
 .DESCRIPTION
 	A longer description of Invoke-MyFunc1.
 
@@ -12,7 +12,7 @@ function Invoke-MyFunc1 {
 	Input file containing markdown syntax
 
 .PARAMETER B
-	Output file name 
+	Output file name
 
 .PARAMETER C
 	String for top of HTML file with all the content headers (generated content goes after this).
@@ -20,7 +20,7 @@ function Invoke-MyFunc1 {
 .EXAMPLE
 	"ABC" | Invoke-MyFunc1
 
-	Example returns "A=ABC, B=banana, C=5".  Every example must be a single line of code, followed by 
+	Example returns "A=ABC, B=banana, C=5".  Every example must be a single line of code, followed by
 	a paragraph explanation of return value and what happened.
 
 .EXAMPLE
@@ -44,7 +44,7 @@ function Invoke-MyFunc1 {
 		$C = 5
 	)
 
-	Write-Output "A=$A, B=$B, C=$C"	
+	Write-Output "A=$A, B=$B, C=$C"
 }
 
 Invoke-MyFunc1 "apple" "bear"

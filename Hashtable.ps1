@@ -10,41 +10,13 @@ $MyHash2.c = 3
 
 $MyHash3 = @{ "a"=1; "b"=2; "c"=3; }
 
-function Convert-HashtableToString {
-<#
-.SYNOPSIS
-	Convert hashtable to string like key1=value2,key2=value2,...
+($MyHash1.Keys | sort | % { "$($_)=$($MyHash1[$_])" }) -join ', '
 
-.EXAMPLE
-	Convert-HashtableToString ${ "A"="1"; "B"="2"; "C"="3"; } 
-	Returns "A=1;B=2;C=3"
+($MyHash2.Keys | sort | % { "$($_)=$($MyHash2[$_])" }) -join ', '
 
-.NOTES
-	Brian Woelfel 7/1/2018
-#>
-	[cmdletBinding()]
-	param (
-		[Parameter(ValueFromPipeline=$True)]
-		$hash
-	)
+($MyHash3.Keys | sort | % { "$($_)=$($MyHash3[$_])" }) -join ', '
 
-	if($hash -eq $null) {
-		return ""
-	} else {
-		$A = $hash.GetEnumerator() | % { "$($_.Name)=$($_.Value)" } 
+# something about enumerator
 
-		# Don't order keys if already ordered
-		if("System.Collections.Specialized.OrderedDictionary" -eq $hash.GetType().ToString()) {
-			$B = $A
-		} else {
-			$B = $A | sort
-		}
 
-		$result = $B -join ','
-		return $result
-	}
-}
 
-Write-Host Convert-HashtableToString $MyHash1
-Write-Host Convert-HashtableToString $MyHash2
-Write-Host Convert-HashtableToString $MyHash3

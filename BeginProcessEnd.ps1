@@ -1,4 +1,4 @@
-function Blah {
+function BeginProcessEnd1 {
 	# This function supports pipeline input
 	[CmdletBinding()]
 	param(
@@ -26,20 +26,18 @@ function Blah {
 	}
 
 	# Run this once only at the end
-	# NOT SURE WHAT TO EXPECT: $Item retains last value
+	# NOT SURE IF EXPECTED: $Item retains last value
 	end {
 		Write-Host "end AnotherParam=$AnotherParam, Item=$Item"
 	}
 
 }
 
-function Blah2 {
+function BeginProcessEnd2 {
 	# UNEXPECTED with begin/process/end,
 	# I don't have to explicitly state it's a cmdlet
-	# or uses pipeline, and $Item is implicitly not an array
-	param(
-		$Item
-	)
+	# or uses pipeline, and don't even have to define
+	# parameters
 
 	begin {
 		Write-Host "begin `$_=$_"
@@ -55,7 +53,7 @@ function Blah2 {
 }
 
 #
-# MAYBE there's some efficiency for really large sets 
+# MAYBE there's some efficiency for really large sets
 # where it's a true pipeline, but that's really
 # hard to do right
 #
