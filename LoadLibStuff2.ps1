@@ -5,15 +5,21 @@
 # Normally we would package this kind of code up and make it
 # reusable, except this is bootstrapping code that installs
 # other packages and modules for Powershell, so it's best
-# to copy this file and paste in your module names.
+# to copy this file and paste in your module and package 
+# names.  You only need to run this once on each machine,
+# but you can't get your modules and packages until you do.
 #
 
 
 #
-# Type in an array of nuget package names to install
+# Type in an array of nuget package names to install from nuget.org
 #
-[string[]]$NugetPackages = @()
-[string[]]$PowershellModules = @()
+[string[]]$NugetPackages = @("EPPlus")
+
+#
+# Type in array of powershell modules from powershellgallery.com 
+#
+[string[]]$PowershellModules = @("Invoke-SqlCmd2")
 
 
 #
@@ -22,7 +28,7 @@
 
 if($NugetPackages.Length -gt 0) {
 	# Ask powershell if it's allowed to use the tool nuget to download packages
-	if( (Get-PackageProvider | Where-Object { $_.Name -eq "NuGet" }).Count -eq 0) {
+	if( (Get-PackageProvider | ? { $_.Name -eq "NuGet" }).Count -eq 0) {
 		# It's missing, so tell powershell it should install it
 		Write-Host "Configure powershell to use nuget to install libraries"
 		Get-PackageProvider -Name "nuget" -Force

@@ -1,3 +1,6 @@
+if ('pineapple' -like '*apple*') { Write-Host "match" } else { Write-Host "not match" }
 
-Write-Host "'pineapple' -like '*apple*':" ('pineapple' -like '*apple*')
-Write-Host "'pineapple' -match '^.*apple.*':" ('pineapple' -like '*apple*')
+if ('pineapple' -like '*x*') { Write-Host "match" } else { Write-Host "not match" }
+
+if ('pineapple' -match '^pine.*pp.*$') { Write-Host "match" } else { Write-Host "not match" }
+

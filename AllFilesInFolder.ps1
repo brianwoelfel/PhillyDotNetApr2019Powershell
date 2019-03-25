@@ -1,4 +1,4 @@
-# Get a list of all *.txt greater than 10 bytes
+# Get a list of fully qualified paths like *.txt greater than 10 bytes
 $FileObjArray = Get-ChildItem -Path c:\temp -Filter *.txt -Recurse
 foreach($FileObj in $FileObjArray) {
 	if($FileObj.Length -gt 10) {

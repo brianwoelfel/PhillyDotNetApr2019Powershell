@@ -17,7 +17,11 @@ PS> $MyHash1.Keys | sort | % { Write-Host $_ $MyHash1[$_] }  # Print the hashtab
 a 1
 b 2
 c 3
-PS> $MyHash1.Keys | sort | % { Write-Host "$($_)=$($MyHash1[$_])" } # Format the hashtable keys and values
+PS> $MyHash1.Keys | sort | % { Write-Host $_ "=" $MyHash1[$_] } # Format the hashtable keys and values
+a = 1																								 
+b = 2
+c = 3
+PS> $MyHash1.Keys | sort | % { Write-Host "$($_)=$($MyHash1[$_])" } # Remove extra spaces around equals sign
 a=1																								 
 b=2
 c=3

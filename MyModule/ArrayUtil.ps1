@@ -9,10 +9,7 @@ function Convert-HashtableToString {
 
 .EXAMPLE
 	Convert-HashtableToString ${ "A"="1"; "B"="2"; "C"="3"; } 
-	Returns "A=1;B=2;C=3"
-
-.NOTES
-	Brian Woelfel 7/1/2018
+	Returns "A=1,B=2,C=3"
 #>
 	[cmdletBinding()]
 	param (
