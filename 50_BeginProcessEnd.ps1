@@ -1,16 +1,11 @@
 function BeginProcessEnd1 {
-	# This function supports pipeline input
-	[CmdletBinding()]
+	[CmdletBinding()] # This function supports pipeline input
 	param(
-		# Pipeline input goes to this variable
-		[Parameter(ValueFromPipeline=$true)]
-		# UNEXPECTED this is [string] not [string[]]
-		[string]
+		[Parameter(ValueFromPipeline=$true)] # Pipeline input goes to this variable
+		[string] # UNEXPECTED this is [string] not [string[]]
 		$Item,
-
-		# This is another parameter that is not part of the pipeline
-		[string]
-		$AnotherParam="test"
+		
+		[string] $AnotherParam="test" # This is another parameter that is not part of the pipeline
 	)
 
 	# Run this once only at the beginning, $Item isn't defined

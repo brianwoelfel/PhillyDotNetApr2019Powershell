@@ -41,6 +41,7 @@ function Invoke-MyFunc1 {
 		$B = "banana",
 
 		[int]
+		[ValidateRange(1,10)]
 		$C = 5
 	)
 
