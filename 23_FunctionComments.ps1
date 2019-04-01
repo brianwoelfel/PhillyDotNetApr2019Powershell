@@ -49,3 +49,4 @@ function Invoke-MyFunc1 {
 }
 
 Invoke-MyFunc1 "apple" "bear"
+Get-Help Invoke-MyFunc1
