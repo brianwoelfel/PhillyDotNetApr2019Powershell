@@ -1,5 +1,5 @@
 cls; Write-Host "#### STRING EVALUATION ####"
-$A = "Hello"
+$A = "Hello" # Define some variables
 $B = "World"
 $C = 10
 

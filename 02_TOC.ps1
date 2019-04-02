@@ -1,15 +1,17 @@
 <#
-
- * Use optional semicolons to separate lines
+Top tips:
+ * All variables get prefixed with $
+ * Backtick ` is the escape character, not \
  * Don't use commas to separate arguments when calling a function
- * Use commas to separate arguments when defining a function
- * Use weird "param" structure for defining function arguments
- * Use backtick "`" to do line continuation and escape characters ...
+ * Orphaned strings in a function get returned
+ * Array with one value returned as a single non-array value unless you prefix with comma
+ * Use weird "param" syntax for defining function parameters
+ * Where-Object shorthand is "... | ? { $_... }"
+ * ForEach-Object shorthand is "... | % { $_... }"
+ * Can evaluate expressions in double-quotes with $() like "Hello $($MyCount + 1)"
  * Use @" and "@ for a multiline string
  * Use "-eq" not "==" for string equality
  * Functions return values sometimes even without "return" keyword
  * How to use pipelines
- * Shortcut for "foreach" is " ... | % { $_ } "
- * Shortcut for "where" is " ... | ? { $_ } "
  * How to call nuget packages
 #>

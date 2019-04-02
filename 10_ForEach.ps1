@@ -10,3 +10,4 @@ $Arr | foreach { Write-Host "Sample 3: $_" } # "foreach" means same as "ForEach-
 $Arr | % { Write-Host "Sample 4: $_" } # this is powershell shorthand for "ForEach"
 
 foreach($Item in $Arr) { Write-Host "Sample 5: $Item" } # foreach with explicit loop var
+

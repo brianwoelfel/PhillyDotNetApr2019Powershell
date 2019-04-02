@@ -1,4 +1,5 @@
-function Invoke-MyFunc1 {
+cls; Write-Host "#### FUNCTION COMMENTS ####"
+function Invoke-FunctionComments {
 <#
 .SYNOPSIS
 	A quick one sentence summary of Invoke-MyFunc1
@@ -48,5 +49,5 @@ function Invoke-MyFunc1 {
 	Write-Output "A=$A, B=$B, C=$C"
 }
 
-Invoke-MyFunc1 "apple" "bear"
-Get-Help Invoke-MyFunc1
+Invoke-FunctionComments "apple" "bear"
+Get-Help Invoke-FunctionComments

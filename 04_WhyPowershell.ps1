@@ -1,4 +1,4 @@
-<#
+<#  #### WHY POWERSHELL? ####
 
 # In what situations can a C# developer benefit by faking Powershell experience?
 
