@@ -10,6 +10,6 @@ Invoke-MyFunc -A "apple" -B "banana" -C "carrot" # Easier to read
 
 Invoke-MyFunc @("apple", "banana", "carrot") "ABC" "XYZ" # Note first arg is array
 
-# Pass in all your parameters at once called "splatting"
+# Pass in all your parameters at once called "splatting" (not very common)
 $Splat = @{ "A"="apple"; "B"="banana"; "C"="carrot" }
 Invoke-MyFunc @Splat # Note the at-sign prefix
