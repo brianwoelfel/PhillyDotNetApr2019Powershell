@@ -13,3 +13,6 @@ $MyArray4 = "a", "b", "c" # I guess you don't really need parenthesis either
 Write-Host "Test 4: " $MyArray4
 $MyArray5 = (1..10); # Short cut for arrays of integers 1 to 10
 Write-Host "Test 5: " $MyArray5
+
+# Avoid stressing out about List<String>, string[], ArrayList<String>
+# unless you're explicitly calling a C# API that needs something specific

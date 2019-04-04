@@ -13,3 +13,6 @@ $MyHash2 = @{}; $MyHash2.a = 1; $MyHash2.b = 2; $MyHash2.c = 3
 # Powershell style hashtable initializer, note those are ";" not "," 
 $MyHash3 = @{ "a"=1; "b"=2; "c"=3; }
 ($MyHash3.Keys | sort | % { "$($_)=$($MyHash3[$_])" }) -join ', '
+
+# Avoid stressing about Dictionary<String, String> or Dictionary<String, Object>
+# just let Powershell do it's thing.

@@ -5,6 +5,8 @@ Powershell is a scripting language used to automate sysadmin tasks based on C#'s
 
 Intended Audience: C# developers who vaguely know what Powershell is but too lazy to study it
 
+Class Style: Not interactive, but you call pull source code and review as we talk.
+
 Objective:
  * In what situations does it benefit you to pretend know Powershell?
  * Fast intro to powershell syntax

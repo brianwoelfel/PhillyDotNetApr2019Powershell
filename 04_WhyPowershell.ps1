@@ -1,6 +1,6 @@
 <#  #### WHY POWERSHELL? ####
 
-# In what situations can a C# developer benefit by faking Powershell experience?
+In what situations can a C# developer benefit by faking Powershell experience?
 
 * You're too lazy to build a full admin tool for your project, but you want to dump
   responsibilities from your app dev team to dev ops
@@ -10,7 +10,8 @@
 * Boss is more likely to let you build a Powershell script for your pet project
   than a full blown C# app.  
  
-* You have to do some serious devops stuff about Windows operating system stuff
+* You have to do some serious devops stuff about Windows operating system stuff 
+  (proccesses, memory, disk space, networking)
 
 * You're doing anything with AWS, Azure, or Ansible.  
 
