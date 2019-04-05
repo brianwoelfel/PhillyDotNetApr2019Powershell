@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -6,7 +9,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            StringEval();
+            DictionaryToString();
         }
 
         static void StringEval()
@@ -33,11 +36,34 @@ namespace ConsoleApp1
 
         }
 
-        public static void Hashtable()
+        public static void MyHashtable()
         {
-            //Hashtable<string, string> hash = { { "a", "1" }, { "b", "2" } };
-            //hash["c"] = "3";
-            //hash
+            Hashtable hash = new Hashtable() { { "a", "1" }, { "b", "2" } };
+            hash["c"] = "3";
+            foreach (DictionaryEntry s in hash)
+            {
+                Console.WriteLine("key " + s.Key + " = " + s.Value);
+            }
+        }
+
+        public static void MyArray()
+        {
+            string[] myArr = { "a", "b", "c" };
+            myArr.ToList().ForEach(x => Console.WriteLine(x));
+        }
+
+        public static void DictionaryToString()
+        {
+            Dictionary<string, string> myDict = new Dictionary<string, string>(){ { "a", "1" }, { "b", "2" }, { "c", "3" } };
+            myDict.Keys.OrderBy(x => x).ToList().ForEach(x => Console.WriteLine($"{x}={myDict[x]}"));
+        }
+
+        public static void IsNullOrWhitespaceHelper()
+        {
+            string x = "";
+            if (!String.IsNullOrWhiteSpace(x))
+            {
+            }
         }
     }
 }

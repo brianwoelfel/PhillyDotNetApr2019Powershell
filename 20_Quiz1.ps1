@@ -1,15 +1,24 @@
-# 1.  What's wrong?
-
+# 1.  What's wrong with this?
+#
 # $a = "hello"
 # $b = '$a world'
 # Console.WriteLine($b)
 
+# 2.  What's wrong with this?
+# function Quiz1_A($a $b $c) {
+#	Write-Host "a=$a, b=$b, c=$c"
+# }
+# Quiz1_A "1" "2" "3"
 
-# 2. What does this do?
-( @(1..100) | ? { 
-	$N=$_; $P=$true; $D=[math]::Sqrt($N); 
-	2..$D | % { 
-		if($N % $_ -eq 0) { $P = $false }
-	}
-	if($P) { $D }
-} ) -join ','
+# 3.  What will this return?
+# function Quiz1_B($a) {
+#	@("1", "2", "3")
+#   return $a
+# }
+# Quiz1_B "z" 
+
+# 4.  How do I ask Powershell 
+# "show me all functions that start with "Quiz1" and end with "C"?
+# function Quiz1_C($a) {
+#	Write-Host "Quiz1_C a=$a"
+# }

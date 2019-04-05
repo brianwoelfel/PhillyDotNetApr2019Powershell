@@ -14,3 +14,6 @@ $E = "hello"
         Write-Host "Do stuff with non-blank '$_'"
     }
 }
+
+# C# version:
+# if(!String.IsNullOrWhiteSpace(x)) { /* do stuff */ } 

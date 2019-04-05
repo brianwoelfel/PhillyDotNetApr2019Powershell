@@ -11,3 +11,4 @@ $Arr | % { Write-Host "Sample 4: $_" } # this is powershell shorthand for "ForEa
 
 foreach($Item in $Arr) { Write-Host "Sample 5: $Item" } # foreach with explicit loop var
 
+# C# Version: string[] myArr = { "a", "b", "c" }; myArr.ToList().ForEach(x => Console.WriteLine(x));

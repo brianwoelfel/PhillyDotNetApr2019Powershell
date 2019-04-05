@@ -12,3 +12,5 @@ $Arr | where { $_ -gt 8 }
 # so is "?"
 Write-Host "Test 3: "
 $Arr | ? { $_ -gt 8 }
+
+# Same idea as C# LINQ .Where()

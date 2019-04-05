@@ -9,3 +9,7 @@ Write-Host "5:"; $Hsh1.Keys | sort | % { Write-Host $_ "=" $Hsh1[$_] } # Format 
 Write-Host "6:"; $Hsh1.Keys | sort | % { Write-Host "$($_)=$($Hsh1[$_])" } # Remove extra spaces
 Write-Host "7:"; $Hsh1.Keys | sort | % { "$($_)=$($Hsh1[$_])" } # Output to pipeline
 Write-Host "8:"; ($Hsh1.Keys | sort | % { "$($_)=$($Hsh1[$_])" }) -join ',' # Join  with commas
+
+# C# version:
+# Dictionary<string, string> myDict = new Dictionary<string, string>(){ { "a", "1" }, { "b", "2" }, { "c", "3" } };
+# myDict.Keys.OrderBy(x => x).ToList().ForEach(x => Console.WriteLine($"{x}={myDict[x]}"));

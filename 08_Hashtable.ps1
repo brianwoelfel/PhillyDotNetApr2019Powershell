@@ -14,5 +14,13 @@ $MyHash2 = @{}; $MyHash2.a = 1; $MyHash2.b = 2; $MyHash2.c = 3
 $MyHash3 = @{ "a"=1; "b"=2; "c"=3; }
 ($MyHash3.Keys | sort | % { "$($_)=$($MyHash3[$_])" }) -join ', '
 
+# C# version: 
+# Hashtable hash = new Hashtable() { { "a", "1" }, { "b", "2" } };
+# hash["c"] = "3";
+# foreach (DictionaryEntry s in hash)
+# {
+# 	Console.WriteLine("key " + s.Key + " = " + s.Value);
+# }
+
 # Avoid stressing about Dictionary<String, String> or Dictionary<String, Object>
-# just let Powershell do it's thing.
+# just let Powershell do it's thing with Hashtable

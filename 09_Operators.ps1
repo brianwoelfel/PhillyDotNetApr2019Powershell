@@ -1,4 +1,5 @@
-cls; Write-Host "#### OPERATORS ####"; $A = "apple"; $B = "banana"; $C = 10; $D = 20; $E = $true
+cls; Write-Host "#### OPERATORS ####"; 
+$A = "apple"; $B = "banana"; $C = 10; $D = 20; $E = $true # sample dataS
 # -eq EQUALS
 if($A -eq "apple") { Write-Host "$A is apple" } 
 # -ne NOT EQUALS
