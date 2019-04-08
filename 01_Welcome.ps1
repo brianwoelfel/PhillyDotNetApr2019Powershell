@@ -11,6 +11,7 @@ Objective:
  * In what situations does it benefit you to pretend know Powershell?
  * Fast intro to powershell syntax
  * Top mistakes and misunderstandings C# folk have when doing Powershell
+ * Intro to abbreviated syntax used by powershell pros
  * How to call nuget packages
 
 https://github.com/brianwoelfel/PhillyDotNetApr2019Powershell   

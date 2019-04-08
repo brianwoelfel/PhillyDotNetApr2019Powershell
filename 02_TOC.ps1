@@ -15,6 +15,7 @@ Weird stuff that's not obvious
  * Where-Object shorthand is "... | ? { $_... }"
  * ForEach-Object shorthand is "... | % { $_... }"
  * Functions return values sometimes even without "return" keyword
+ * UTF BOMs
  * How to use pipelines
  * How to call nuget packages
 #>
