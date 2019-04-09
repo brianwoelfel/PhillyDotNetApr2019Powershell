@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApp1
 {
@@ -9,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            DictionaryToString();
+            Join1();
         }
 
         static void StringEval()
@@ -64,6 +65,23 @@ namespace ConsoleApp1
             if (!String.IsNullOrWhiteSpace(x))
             {
             }
+        }
+
+        public static void WhereObject1()
+        {
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            arr.Where(x => x > 8).ToList().ForEach(x => Console.WriteLine(x));
+        }
+
+        public static void Join1()
+        {
+            Console.WriteLine(string.Join(',', new string[] { "a", "b", "c" }));
+            "a,b,c".Split(',');
+
+            Regex.Split("a,b;c:d!e", "[,;:!]").ToList().ForEach(x => Console.WriteLine(x));
+
+            Console.WriteLine(string.Join(',', Regex.Split("a,b;c:d!e", "[,;:!]")));
+
         }
     }
 }

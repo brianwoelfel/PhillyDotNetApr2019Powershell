@@ -14,5 +14,4 @@ cls; Write-Host "#### QUIZ ####"
 		$D 
 	}
 } ) -join ','
-# Bonus: what's the flaw?
 

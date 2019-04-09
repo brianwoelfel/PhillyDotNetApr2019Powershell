@@ -19,4 +19,5 @@ Approved verbs for function names.  Your public functions should be named Verb-N
 HEY SCRIPTING GUY
 https://devblogs.microsoft.com/scripting/
 Blog entries about random Powershell stuff, but for some reason this guy's writing style really annoys me.
+
 #>

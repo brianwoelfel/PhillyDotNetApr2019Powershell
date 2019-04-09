@@ -1,4 +1,4 @@
-<#
+<#   #### TOPICS ####
 
 Regular new language stuff
  * All variables get prefixed with $
@@ -9,13 +9,11 @@ Regular new language stuff
 
 Weird stuff that's not obvious
  * Don't use commas to separate arguments when calling a function
- * Orphaned strings in a function get returned
+ * Orphaned strings in a function get returned even without "return" key word
  * Array with one value returned as a single non-array value unless you prefix with comma
- * Use weird "param" syntax for defining function parameters
  * Where-Object shorthand is "... | ? { $_... }"
  * ForEach-Object shorthand is "... | % { $_... }"
- * Functions return values sometimes even without "return" keyword
+ * Use weird "param" syntax for defining function parameters
  * UTF BOMs
- * How to use pipelines
- * How to call nuget packages
+ * How to use pipelines, BEGIN/PROCESS/END
 #>

@@ -12,7 +12,6 @@ function Invoke-Return2_2 { 	# makes the directory and returns Dir object and "a
 }
 Write-Host "Invoke-Return2_2" (Invoke-Return2_2)
 
-# UNEXPECTED returns "abc" because Write-Output is for pipeline output
-function Invoke-Return2_3 { Write-Output "abc" }      
+# returns "abc" because Write-Output is for pipeline output
+function Invoke-Return2_3 { Write-Output "abc"; Write-Host "def" }      
 Write-Host "Invoke-Return2_3" (Invoke-Return2_3)
-

@@ -1,11 +1,9 @@
-# This is an end of line comment like //
-<# This is a comment like /* */ #>
+# This is an end of line comment like "//"
+<#  This is a comment like "/* */"    #>
 cls # Clear the screen
-Write-Host "#### HELLO WORLD ####" 
+Write-Host "#### HELLO WORLD ####" # Like Console.WriteLine but more STDERR than STDOUT
 
 $A = "Hello World" # Variables start with $
-
-Write-Host $A # Write-Host debugs to console
 
 # Backtick to continue lines
 Write-Host $A `

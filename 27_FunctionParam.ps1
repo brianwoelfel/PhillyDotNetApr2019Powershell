@@ -1,35 +1,20 @@
+cls; Write-Host "#### FUNCTION PARAM ####"
 function Invoke-MyFunc1 {
-	# This function can act as a cmdlet on the powershell pipeline
-	[cmdletBinding()]
-
-	# Put all the parameters down here instead of after the
-	# function name above.  I have no idea why powershell thought
-	# this was a good idea.
-	param (
-		# Mandatory string parameter that can be passed in from pipeline
-		[parameter(Mandatory=$true, ValueFromPipeline)]
+	[cmdletBinding()] 	# This function can act as a cmdlet on the powershell pipeline
+	param ( # function parameter definition
+		[parameter(Mandatory=$true, ValueFromPipeline)] #  Mandatory string parameter that can be passed in from pipeline
 		[String]  # Type is optional
-		$A,
+		$Animal,
 
-		# This is a mandatory string parameter
-		[parameter(Mandatory=$true)]
-		[String]
-		# You can supply an optional alternate spelling/name for this param
-		[Alias("Fruit")]
-		$B = "banana",
+		[parameter(Mandatory=$true)] # Mandatory string param
+		[Alias("F")] # You can supply an optional alternate spelling/name for this param
+		$Fruit, 
 
 		# Optional int parameter with explicit default
 		[int]
-		$C = 5
+		$Num = 5
 	)
-
-	Write-Output "A=$A, B=$B, C=$C"
+	Write-Output "Animal=$Animal, Fruit=$Fruit, Num=$Num"
 }
-
-Invoke-MyFunc1 "apple" "bear"
-
-Something about [Array] and [Hashtable]
-
-Something about aliases
-
-Something about validation
+Write-Host "Test 1:" ; Invoke-MyFunc1 "bear" "blueberry"
+Write-Host "Test 2:" ; echo "otter" | Invoke-MyFunc1 -F "apple" -Num 20 
