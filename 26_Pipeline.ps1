@@ -18,9 +18,10 @@ function Invoke-Pipeline1() {
 }
 
 Write-Host "Test 1:"; Invoke-Pipeline1 -MyInput "abc"
-# THIS FAILS! Write-Host "Test 2:"; Invoke-Pipeline1 -MyInput @("abc","def")
+# THIS FAILS Write-Host "Test 2:"; Invoke-Pipeline1 -MyInput @("abc","def")
 Write-Host "Test 3:"; "abc" | Invoke-Pipeline1
 Write-Host "Test 4:"; @("abc","def") | Invoke-Pipeline1
+# Remember "sc" is Save-Content - dump text to file, and "gc" is Get-Content, load text file as new-line delimited array
 "The quick brown fox`njumped over`nthe lazy dog" | sc "C:\temp\foo.txt"
 Write-Host "Test 5:"; gc "c:\temp\foo.txt" | Invoke-Pipeline1
 # Newlines aren't a valid delimiter
