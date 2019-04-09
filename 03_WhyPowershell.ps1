@@ -13,7 +13,7 @@ In what situations can a C# developer benefit by faking Powershell experience?
 * You have to do some serious operating system level devops stuff 
   (proccesses, memory, disk space, networking)
 
-* You're doing anything with AWS, Azure, Ansible, Sharepoint admin/automation, 
+* You're doing anything with AWS, Azure, Ansible, ActiveDirectory, Sharepoint admin/automation, 
   TFS build automation
 
 #>

@@ -16,6 +16,7 @@ Objective:
  * Intro to abbreviated syntax used by powershell pros
  * How to call nuget packages
  * How to do SQL calls
+ * We're not going to do advanced sysadmin stuff
 
 Instructor:
 https://github.com/brianwoelfel/PhillyDotNetApr2019Powershell   
