@@ -19,4 +19,4 @@ bwoelfel@eigenx.com -- http://linkedin.com/in/brianwoelfel
 
 Brian is presenting *"An Insider's Guide to Getting Hired and Starting your Tech Career"*
 for college juniors, seniors, and recent grads May 8th 6pm-7:30pm, 20th & Market
-https://2019.phillytechweek.com/ (https://bit.ly/2CqVtAO)
+[2019.phillytechweek.com](https://2019.phillytechweek.com/events/an_insider-s_guide_to_getting_hired_and_starting_your_tech_career)
