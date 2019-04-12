@@ -20,4 +20,6 @@ Didn't fit into this demo, but you should know:
 
 * PowerShellCore is rewritten using DotNet core and is platform independent.  Syntax is the same, but it's not
   always clear how third party dependencies work.
+
+* Lots of stuff in powershell about formatting output as tables, but the syntax is weird and hard to use.
 #>
