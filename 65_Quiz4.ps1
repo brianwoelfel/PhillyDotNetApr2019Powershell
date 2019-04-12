@@ -1,6 +1,7 @@
-cls; Write-Host "#### QUIZ ####"
+cls; Write-Host "#### QUIZ 4 ####"
 
 # Quiz- what does this do?
+# If you read ahead, don't blurt out the answer please.
 ( @(1..100) | ? { 
 	$N=$_; 
 	$P=$true; 

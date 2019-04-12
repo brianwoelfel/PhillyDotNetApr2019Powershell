@@ -13,3 +13,6 @@ $Arr | where { $_ -gt 8 }
 # so is "?"
 Write-Host "Test 3: "
 $Arr | ? { $_ -gt 8 }
+
+Write-Host "Test 4:" # "where" works fine with a single non-array value
+100 | ? { $_ -gt 10 }

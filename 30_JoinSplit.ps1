@@ -1,5 +1,4 @@
 cls; Write-Host "#### JOIN AND SPLIT ####"
-
 Write-Host "Test 1: "
 @("a", "b", "c") -join ',' # Join an array with a delimiter
 # C# version: string.Join(',', new string[] { "a", "b", "c" })
@@ -13,5 +12,5 @@ Write-Host "Test 3: "
 # C# version: Regex.Split("a,b;c:d!e", "[,;:!]")
 
 Write-Host "Test 4: "
-("a,b;c:d!e" -split '[,;:!]') -join "#" # Nest split result with parens, then join result
+("a,b;c:d!e" -split '[,;:!]') -join "#" # Nest split result with parens, then rejoin result
 # C# version: string.Join(',', Regex.Split("a,b;c:d!e", "[,;:!]"))

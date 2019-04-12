@@ -13,7 +13,7 @@ function Invoke-BeginProcessEnd1 {
 		Write-Host "begin AnotherParam=$AnotherParam, Item=$Item"
 	}
 
-	# Implicitly repeat this block for each line of input via $_
+	# Implicitly repeat this block for each line of pipeline input via $_
 	process { # "process" is a reserved word in Powershell
 		Write-Host "process AnotherParam=$AnotherParam, Item=$Item, `$_=$_"
 	}
@@ -22,4 +22,4 @@ function Invoke-BeginProcessEnd1 {
 		Write-Host "end AnotherParam=$AnotherParam, Item=$Item"
 	}
 }
-@("A","B","C") | Invoke-BeginProcessEnd1
+@("A","B","C") | Invoke-BeginProcessEnd1 -AnotherParam "xxx"

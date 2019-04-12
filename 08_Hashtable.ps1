@@ -1,6 +1,6 @@
 cls; Write-Host "#### HASHTABLES ####"
 # Powershell likes Hashtables over C# Dictionaries
-$MyHash1 = @{}; # Empty hashtable
+$MyHash1 = @{}; # Empty hashtable, literally a C# System.Collections.Hashtable
 $MyHash1["a"] = 1; # Add elements
 $MyHash1["b"] = 2; $MyHash1["c"] = 3 # Add some more
 # This next line prints out the hashtable pretty

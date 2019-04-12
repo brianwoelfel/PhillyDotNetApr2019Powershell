@@ -1,6 +1,11 @@
 <#     ####  END  ####
 
-Thanks for joining!  Time for questions.
+Thanks for joining!  
+
+Final thoughts:
+
+* You should recognize powershell shorthand like ? { }, % { }, gci, sc, 
+  but be nice to your future replacements and use the long form when writing code 
 
 Materials:
 https://github.com/brianwoelfel/PhillyDotNetApr2019Powershell   

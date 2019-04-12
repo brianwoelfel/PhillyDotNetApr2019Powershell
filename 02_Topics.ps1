@@ -13,6 +13,8 @@ Weird stuff that's not obvious
  * Array with one value returned as a single non-array value unless you prefix with comma
  * Where-Object shorthand is "... | ? { $_... }"
  * ForEach-Object shorthand is "... | % { $_... }"
+ * -contains is different from -like
+ * Where-Object, ForEach-Object, and sort pretty much give you most of LINQ
  * Use weird "param" syntax for defining function parameters
  * UTF BOMs
  * How to use pipelines, BEGIN/PROCESS/END

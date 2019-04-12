@@ -6,9 +6,6 @@ $MyHash = @{ "Species"="Dog"; "Breed"="Great Dane"; "Weight"=200 }
 #$D = '$A puppy'
 #Console.WriteLine($D)
 
-$D = "$A puppy"
-Write-Host $D
-
 # 2.  Will this work correctly?
 foreach($X in @($A, $B, $C)) { Write-Host "Test 2:" $X; }
 

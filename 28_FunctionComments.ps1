@@ -13,10 +13,10 @@ function Invoke-FunctionComments {
 	Input file containing markdown syntax
 
 .PARAMETER B
-	Output file name
+	Defaults to banana
 
 .PARAMETER C
-	String for top of HTML file with all the content headers (generated content goes after this).
+	Must be integer between 1 and 10
 
 .EXAMPLE
 	"ABC" | Invoke-MyFunc1
@@ -42,12 +42,15 @@ function Invoke-FunctionComments {
 		$B = "banana",
 
 		[int]
-		[ValidateRange(1,10)]
+		[ValidateRange(1,10)] # validate that parameters are good
 		$C = 5
 	)
-
 	Write-Output "A=$A, B=$B, C=$C"
 }
 
 Invoke-FunctionComments "apple" "bear"
-Get-Help Invoke-FunctionComments
+Get-Command Invoke*Comments # List all matching commands
+Get-Help Invoke-FunctionComments # Get  help
+Get-Help Invoke-FunctionComments -Detailed # Get detailed help
+Get-Help Invoke-FunctionComments -Full # Get full help
+Invoke-FunctionComments -? # alternate syntax

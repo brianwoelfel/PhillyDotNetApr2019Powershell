@@ -16,7 +16,6 @@ Test 4: multiline string with evaluation,
     and use backtick to escape dollar sign
     `$A=$A `$B=$B
 "@
-
 # C# version: Console.WriteLine($@"
 #    Test 4: multiline string with evaluation,
 #    a={a} b={b}

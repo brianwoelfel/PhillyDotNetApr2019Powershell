@@ -16,8 +16,8 @@ function Invoke-BeginProcessEnd2 {
 		Write-Host "end `$_=$_" # Retains final input value
 	}
 }
-@("A","B","C") | Invoke-BeginProcessEnd2
+Write-Host "Test 1:"; @("A","B","C") | Invoke-BeginProcessEnd2
 
 # Ridiculously abbreviated
 function Invoke-BeginProcessEnd3 { process { "process `$_=$_" } }
-@("A","B","C") | Invoke-BeginProcessEnd3
+Write-Host "Test 2:"; @("A","B","C") | Invoke-BeginProcessEnd3

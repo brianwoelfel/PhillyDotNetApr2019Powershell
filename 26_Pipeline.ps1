@@ -2,7 +2,7 @@ cls; Write-Host "#### PIPELINE ####"
 
 function Invoke-Pipeline1() {
 	[cmdletBinding()] # I don't know why, but you just need this
-	param ( 
+	param ( # NOTE: we're inside the function body
         [parameter(ValueFromPipeline)] # Input is coming from the pipeline like STDIN
         [string[]]$MyInput  # [string] or array syntax [string[]]?  Meh doesn't matter
         # NOTE: $Input is a reserved word, don't use that

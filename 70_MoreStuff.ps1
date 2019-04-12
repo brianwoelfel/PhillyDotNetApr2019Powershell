@@ -1,9 +1,7 @@
 <#   #### MORE STUFF YOU SHOULD KNOW ####
-
 Didn't fit into this demo, but you should know:
-
-* Powershell supports classes, but it's an awkward afterthought.  It does work, but very clunky and it's
-  tricky to figure out subtle things like override and inheritance.  If you find yourself doing complicated
+* Powershell supports classes, but it's an awkward afterthought (like JavaScript).  It does work, but very clunky and it's
+  tricky to figure out subtle things like overrides and inheritance.  If you find yourself doing complicated
   object-oriented theoretical stuff in Powershell, it's probably the wrong tool for the job.
 
 * You can make a Config class for your favorite config setings like database strings, make a corresponding
@@ -19,4 +17,7 @@ Didn't fit into this demo, but you should know:
 * try/catch/finally works in Powershell
 
 * $Input is a reserved word
+
+* PowerShellCore is rewritten using DotNet core and is platform independent.  Syntax is the same, but it's not
+  always clear how third party dependencies work.
 #>
