@@ -1,9 +1,9 @@
 <#     ####  How to Quickly Fake Powershell If You Know C#  ####
 Philly Code Camp, Sat Apr 13, 2019, 3pm
 
-Powershell is a scripting language used to automate sysadmin tasks based on C#'s CLR library.
+POWERSHELL is a scripting language used to automate sysadmin tasks based on C#'s CLR library.
 
-Intended Audience: C# developers who vaguely know what Powershell is but too lazy to study it
+Intended Audience: C# developers who vaguely know what Powershell is but are too lazy to study it
 
 Class Style: 
  * No real-time hands-on coding assignments, but pull source code from git if you like while we talk
@@ -23,5 +23,10 @@ https://github.com/brianwoelfel/PhillyDotNetApr2019Powershell
 Brian Woelfel                                                  
 http://linkedin.com/in/brianwoelfel                            
 bwoelfel@eigenx.com                                            
-Partner, Eigen X (IT consulting firm)                                                                                  
+Partner, Eigen X (IT consulting firm)             
+
+Brian is presenting "An Insider's Guide to Getting Hired and Starting your Tech Career"
+for college juniors/seniors/recent grads May 8th 6pm-7:30pm, 20th & Market
+https://2019.phillytechweek.com/
+https://2019.phillytechweek.com/events/an_insider-s_guide_to_getting_hired_and_starting_your_tech_career
 #>

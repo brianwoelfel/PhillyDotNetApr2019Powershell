@@ -12,9 +12,11 @@ https://github.com/brianwoelfel/PhillyDotNetApr2019Powershell
 
 Instructor:
 Brian Woelfel                                                  
-Partner, Eigen X (IT consulting firm)                                                                                  
+Partner, Eigen X (IT consulting firm based in Radnor, PA)                                                                                  
 bwoelfel@eigenx.com                                            
-http://linkedin.com/in/brianwoelfel                            
+http://linkedin.com/in/brianwoelfel    
+
+Eigen X specializes in Salesforce, Tableau, PowerBI, .NET/Java/NodeJS software dev, Agile/PM/PMO.
 
 If you're working in Philly reach out to me and let's have lunch!
 I've got a lot to say about Angular, Jenkins, GitHub, Kubernetes, Docker, MongoDB, and AWS.
