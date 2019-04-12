@@ -16,8 +16,7 @@ C# developers who vaguely know what Powershell is but are **too lazy to study it
 ### Instructor
 Brian Woelfel                                                  
 Partner, Eigen X (IT consulting firm based in Radnor)             
-bwoelfel@eigenx.com                                            
-http://linkedin.com/in/brianwoelfel                            
+bwoelfel@eigenx.com -- http://linkedin.com/in/brianwoelfel                            
 
 Brian is presenting *"An Insider's Guide to Getting Hired and Starting your Tech Career"*
 for college juniors, seniors, and recent grads May 8th 6pm-7:30pm, 20th & Market
