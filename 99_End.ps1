@@ -14,12 +14,11 @@ https://github.com/brianwoelfel/PhillyDotNetApr2019Powershell
 Instructor:
 Brian Woelfel                                                  
 Partner, Eigen X (IT consulting firm based in Radnor, PA)                                                                                  
+Eigen X specializes in Salesforce, Tableau, PowerBI, .NET/Java/NodeJS software dev, Agile/PM/PMO.
 bwoelfel@eigenx.com                                            
 http://linkedin.com/in/brianwoelfel    
 
-Eigen X specializes in Salesforce, Tableau, PowerBI, .NET/Java/NodeJS software dev, Agile/PM/PMO.
-
 If you're working in Philly reach out to me and let's have lunch!
 I've got lots of opinions on DotNet Core, Angular, Jenkins, GitHub, Kubernetes, Docker, MongoDB, and AWS
-including "I don't understand what's going on" and "How does this work?""
+including "I don't understand what's going on" and "How does this work?"  
 #>
